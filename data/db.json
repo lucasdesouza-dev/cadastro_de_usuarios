@@ -1,0 +1,22 @@
+{
+  "usuarios": [
+    {
+      "urlIcon": "https://cdn-icons-png.flaticon.com/512/17/17004.png",
+      "nome": "Lucas",
+      "idade": "27",
+      "cpf": "14755596312",
+      "rg": "14478526",
+      "email": "lucas@lucas.com",
+      "id": 1
+    },
+    {
+      "urlIcon": "https://cdn-icons-png.flaticon.com/512/17/17004.png",
+      "nome": "Pyetra",
+      "idade": "05",
+      "cpf": "1589666658523",
+      "rg": "148963",
+      "email": "pyetra@pyetra.com",
+      "id": 3
+    }
+  ]
+}

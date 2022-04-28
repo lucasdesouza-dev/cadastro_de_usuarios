@@ -1,0 +1,79 @@
+.usuario {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius:20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0.5em;
+  background-color:#ffffff;
+  transition: box-shadow 250ms;
+  
+
+}
+.card:hover{
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+.usuario span {
+  margin: 5px;
+}
+
+.usuario img {
+  width: 150px;
+}
+
+.add_usuario {
+  
+
+}
+
+.add_usuario label {
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+
+.input_submit {
+  margin: 1em;
+  width: 25px;
+  height: 25px;
+}
+
+.add_usuario input {
+  text-align: center;
+  font-size: 1em;
+  width: 300px;
+  height: 25px;
+  border-radius: 30px;
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+}
+
+.add_usuario label span {
+  font-size: 1.2em;
+}
+
+.icon_Delete {
+  position: relative;
+  top: 30px;
+  right: 80px;
+  bottom: 100px;
+  cursor: pointer;
+}
+
+.iconUser svg {
+  font-size: 9em;
+}

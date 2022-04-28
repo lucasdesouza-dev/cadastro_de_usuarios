@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+ background-color: rgba(138, 231, 210, 0.3);
+  /* background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+}
