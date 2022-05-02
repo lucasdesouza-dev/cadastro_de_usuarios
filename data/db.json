@@ -1,22 +1,22 @@
 {
   "usuarios": [
     {
-      "urlIcon": "https://cdn-icons-png.flaticon.com/512/17/17004.png",
-      "nome": "Lucas",
+      "nome": "Lucas Souza",
       "idade": "27",
-      "cpf": "14755596312",
-      "rg": "14478526",
+      "cpf": "145477789652",
+      "rg": "14859635",
       "email": "lucas@lucas.com",
+      "sexo": "Masculino",
       "id": 1
     },
     {
-      "urlIcon": "https://cdn-icons-png.flaticon.com/512/17/17004.png",
-      "nome": "Pyetra",
-      "idade": "05",
-      "cpf": "1589666658523",
-      "rg": "148963",
-      "email": "pyetra@pyetra.com",
-      "id": 3
+      "nome": "Stefany Resende",
+      "idade": "22",
+      "cpf": "14588896324",
+      "rg": "14485489",
+      "email": "stefany@stefany.com",
+      "sexo": "Feminino",
+      "id": 2
     }
   ]
 }
