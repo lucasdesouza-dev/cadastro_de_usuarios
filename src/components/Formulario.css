@@ -1,0 +1,95 @@
+.add_usuario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  background: #d3d3d3;
+  width: 55%;
+  height: 70%;
+  border: solid 3px red;
+}
+.input_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.input_text label {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+.input_text input {
+  text-align: center;
+  font-size: 1em;
+  width: 300px;
+  height: 25px;
+  border-radius: 30px;
+  -moz-appearance: textfield;
+}
+
+.input_submit {
+  width: 150px;
+  height: 35px;
+  border-radius: 15px;
+  border: solid 3px gold;
+}
+
+.endereco {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.endereco label {
+  padding: 1em;
+}
+.endereco input,
+select {
+  text-align: center;
+  font-size: 1em;
+  width: 300px;
+  height: 25px;
+  border-radius: 30px;
+  -moz-appearance: textfield;
+}
+
+/* 
+.add_usuario label {
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+
+.input_submit {
+  margin: 1em;
+  width: 25px;
+  height: 25px;
+}
+
+.add_usuario input {
+  text-align: center;
+  font-size: 1em;
+  width: 300px;
+  height: 25px;
+  border-radius: 30px;
+  -moz-appearance: textfield;
+  /* -webkit-appearance: none;} */
+
+/* .add_usuario label span {
+  font-size: 1.2em;
+}
+s.input_radio{
+  display: flex;
+  width: 200px;
+}
+ */

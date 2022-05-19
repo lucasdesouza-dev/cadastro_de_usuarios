@@ -6,7 +6,7 @@
 
 .card {
   width: 200px;
-  height: 300px;
+  height: 350px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius:20px;
   display: flex;
@@ -31,40 +31,8 @@
   width: 150px;
 }
 
-.add_usuario {
-  
 
-}
 
-.add_usuario label {
-
-  display: flex;
-  flex-direction: column;
-
-  justify-content: center;
-  align-items: center;
-  margin: 1em;
-}
-
-.input_submit {
-  margin: 1em;
-  width: 25px;
-  height: 25px;
-}
-
-.add_usuario input {
-  text-align: center;
-  font-size: 1em;
-  width: 300px;
-  height: 25px;
-  border-radius: 30px;
-  -moz-appearance: textfield;
-  -webkit-appearance: none;
-}
-
-.add_usuario label span {
-  font-size: 1.2em;
-}
 
 .icon_Delete {
   position: relative;

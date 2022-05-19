@@ -27,7 +27,7 @@ const Usuarios = ({  users, handleRemove}) => {
               <span>CPF: {usuario.cpf}</span>
               <span>RG: {usuario.rg}</span>
               <span>Email: {usuario.email}</span>
-
+              <span>Sexo: {usuario.sexo}</span>
             </li>
           ))}
         </ul>
