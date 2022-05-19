@@ -4,9 +4,9 @@ import './App.css';
 import Usuarios from "./components/Usuarios"
 
 //Hooks
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
 
-import {useFetch} from "./hooks/useFetch"
+import { useFetch } from "./hooks/useFetch"
 import Formulario from './components/Formulario';
 
 function App() {
@@ -18,24 +18,49 @@ function App() {
   const [cpf, setCpf] = useState("")
   const [rg, setRg] = useState("")
   const [email, setEmail] = useState("")
-  const [sexo, setSexo]= useState("Masculino")
- 
+  const [sexo, setSexo] = useState("Masculino")
+  const [dataInput, setDataInput] = useState("")
+  const [job, setJob] = useState("")
 
-  
+
+  const [cep, setCep] = useState("")
+  const [estado, setEstado] = useState("")
+  const [cidade, setCidade] = useState("")
+  const [bairro, setBairro] = useState("")
+  const [rua, setRua] = useState("")
+  const [numero, setNumero] = useState("")
+  const [complemento, setComplemento] = useState("")
+
+  console.log(dataInput)
+  //corverter data para br
+  const [dataNascimento, setDataNascimento] = useState("")
+  useEffect(() => {
+    //funcao de formatacao de data 
+
+    const dataFormatada = () => {
+
+      let data = dataInput.split('-').reverse().join("/")
+      setDataNascimento(data)
+    }
+
+    dataFormatada()
+  }, [dataInput])
+
+
 
   //url da api
   const url = "http://localhost:3000/usuarios";
-//buscando dados da api
+  //buscando dados da api
 
-  const {data:users, httpConfig} = useFetch(url)
-  
-  
+  const { data: users, httpConfig } = useFetch(url)
+
+
 
   //funcoes
-  const handleSubmit = async (e)=>{
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    const usuario={
+
+    const usuario = {
       //urlIcon,
       nome,
       idade,
@@ -43,44 +68,54 @@ function App() {
       rg,
       email,
       sexo,
+
     };
-  
+
     // hook para requisicao api
-    httpConfig(usuario,"POST")
-    
+    httpConfig(usuario, "POST")
+
     setNome("");
     setIdade("");
     setCpf("");
     setRg("");
     setEmail("");
 
-    
+
   };
 
-  const handleRemove =(id) => {
-    httpConfig(id,"DELETE")
+  const handleRemove = (id) => {
+    httpConfig(id, "DELETE")
   }
 
 
   return (
-  
-    <div className="App">
-      <h1>Cadastro de Usuarios</h1>
 
-      <Formulario 
-        handleSubmit={handleSubmit} 
+    <div className="App">
+      <h1>Cadastro de Funcionarios</h1>
+
+      <Formulario
+        handleSubmit={handleSubmit}
         setNome={setNome} nome={nome}
         setIdade={setIdade} idade={idade}
         setCpf={setCpf} cpf={cpf}
         setRg={setRg} rg={rg}
         setEmail={setEmail} email={email}
         setSexo={setSexo} sexo={sexo}
+        setDataInput={setDataInput} dataInput={dataInput}
+        setCep={setCep} cep={cep}
+        setEstado={setEstado} estado={estado}
+        setCidade={setCidade} cidade={cidade}
+        setBairro={setBairro} bairro={bairro}
+        setRua={setRua} rua={rua}
+        setNumero={setNumero} numero={numero}
+        setComplemento={setComplemento} complemento={complemento}
+        setJob={setJob} job={job}
       />
 
-      <Usuarios users={users} handleRemove={handleRemove}  />
-      
-      
-</div>
+      <Usuarios users={users} handleRemove={handleRemove} />
+
+
+    </div>
   );
 }
 

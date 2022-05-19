@@ -17,6 +17,15 @@
       "email": "stefany@stefany.com",
       "sexo": "Feminino",
       "id": 2
+    },
+    {
+      "nome": "Pyetra",
+      "idade": "05",
+      "cpf": "15488896325",
+      "rg": "35898547",
+      "email": "pyetra@pyetra.com",
+      "sexo": "Feminino",
+      "id": 3
     }
   ]
 }
